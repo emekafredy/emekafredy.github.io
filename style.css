@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+/*use vh(viewport height) css unit for full coverage*/
+.lander {
+  background-image: url('lander.png');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
+.lander h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+
+.lander p {
+  font-size: 25px;
+  color: #fff;
+}
+
+
+.insight {
+  border-radius: 4px;
+  background-color: #006837;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 18px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.insight span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.insight span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.insight:hover {
+  background: #001500;
+  cursor: pointer;
+  opacity: 1;
+  transition: .5s;
+}
+
+.insight:hover span {
+  padding-right: 25px;
+}
+
+.insight:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.first-sec {
+  padding: 20px;
+  background-color: #006837;
+  color: #fff;
+  text-align: center;
+}
+
+
+.second-sec {
+  padding: 20px;
+  color: #006837;
+  text-align: center;
+}
+
+
+.third-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.third-sec div {
+  padding: 20px;
+}
+
+
+.third-sec .div1, .third-sec .div3 {
+  background-color: #006837;
+  color: #fff;
+}
+
+
+.third-sec .div2 {
+  color: #006837;
+}
